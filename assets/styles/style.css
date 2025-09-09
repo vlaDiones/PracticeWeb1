@@ -115,7 +115,7 @@ section {
 }
 .hero-wrap {
     width: 434px;
-    margin-left:52px;
+    margin-left: 52px;
     display: flex;
     flex-direction: column;
 }
@@ -128,7 +128,6 @@ section {
     border-radius: 20px;
     color: var(--button-text-color);
     background: var(--button-color);
-    white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
