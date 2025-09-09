@@ -15,8 +15,10 @@ body {
     font-size: 40;
     font-weight: 400;
     font-family: "DM Serif Display";
+    
 }
 svg {
-    width: auto;
-    height: 100%;
+      width: 100%;
+      height: 100%;
+      fill: none;
 }
