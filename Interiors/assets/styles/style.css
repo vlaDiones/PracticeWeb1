@@ -1,7 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('_variables.css');
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
-    background: lightblue;
+    background: var(--primary-bg-color);
+}
+.logo {
+    height: 10px;
+    width: 10px;
+    font-size: 40;
+    font-weight: 400;
+    font-family: "DM Serif Display";
+}
+svg {
+    width: auto;
+    height: 100%;
 }
