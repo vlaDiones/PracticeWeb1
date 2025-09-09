@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('_variables.css');
 :root {
     --primary-color: #CDA274;
     --secondary-color: #F4F0EC;
@@ -153,4 +152,5 @@ section {
     width: 15px;
     height: 13px;
 }
+
 
