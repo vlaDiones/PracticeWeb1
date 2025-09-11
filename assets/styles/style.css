@@ -741,6 +741,25 @@ footer {
     .project-discription {
         width: 100%;
     }
+    .project {
+        overflow: hidden;
+    }
+    .project a img {
+        
+        border-radius: 0; 
+    }
+    .projects-wrap .project:nth-child(1) a img {
+        border-radius: 0 80px 0 0 ; 
+    }
+    .projects-wrap .project:nth-child(2) a img {
+        border-radius: 80px 0 0 0; 
+    }
+    .projects-wrap .project:nth-child(3) a img {
+        border-radius: 0 0 80px 0; 
+    }
+    .projects-wrap .project:nth-child(4) a img {
+        border-radius: 0 0 0 80px; 
+    }
 	footer {
     	justify-content: space-evenly;
         grid-template-columns: repeat(2, auto);
@@ -780,7 +799,6 @@ footer {
     .companies {
     	grid-template-columns: repeat(5, auto);
     }   
-    
     .articles .article:nth-child(odd):last-child,
     .review-wrap .review:nth-child(odd):last-child,
     .news-wrap .news-section:nth-child(odd):last-child {
@@ -788,7 +806,6 @@ footer {
         width: auto;
         justify-self: auto;
     }
-
     .articles {
     	grid-template-columns: repeat(3, auto);
     }    
