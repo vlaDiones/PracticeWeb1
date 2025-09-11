@@ -157,14 +157,14 @@ section {
     font-size: 30px;
 }
 .header-nav {
-    background: var(--primary-bg-color);
     position: absolute;
     top: 80px;
     right: 0;
     border-radius: 20px;
     padding: 20px;
+    background: var(--primary-bg-color);
     border: 5px solid var(--primary-color);	
-    z-index: 1000; 
+    z-index: 2999; 
     display: none;
 }
 
@@ -400,7 +400,7 @@ main {
     align-items: center;
 	transition: all 1s ease;
 }
-/*---------------------------------------*/
+/*------------------------------------------------------------*/
 .general-info{
     display: flex;
     justify-content: center;
@@ -500,7 +500,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-/*---------------------------------------------------*/
+/*-----------------------------------------------------------------*/
 .join-us {
     padding: 80px 20px;
     background: var(--fourth-color);
