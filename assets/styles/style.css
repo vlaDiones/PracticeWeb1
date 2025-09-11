@@ -125,6 +125,7 @@ section {
     transition: color 0.4s linear, background-color 0.4s linear, box-shadow 0.4s ease;
 }
 .header--scrolled {
+	width: 100%;
     position: fixed;
     min-height: 70px;
     top: 0;
@@ -826,3 +827,4 @@ b) iPads, Tablets – 481px—768px
 c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
 e) Extra large screens, TV – 1201px, and more*/
+
