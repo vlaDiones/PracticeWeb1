@@ -113,9 +113,21 @@ section {
     padding: 48px 0 0;
 }
 
+.logo {
+    width: 177px;
+    font-size: 40px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;    
+}
+
+.logo-icon {
+    width: 34px;
+    height: 34px;
+}
 .header-wrap {
     max-width: 1220px;
-    height: 50px;
+    height: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -135,37 +147,23 @@ section {
     z-index: 3000;
 }
 
-.logo {
-    width: 177px;
-    font-size: 40px;
-    padding: 8px 0;
-}
-
-.logo-icon {
-    width: 34px;
-    height: 34px;
-}
 .burgerMenu {
     font-size: 30px;
 }
 .header-nav {
     background: var(--primary-bg-color);
     position: absolute;
-    top: 100px;
+    top: 80px;
     right: 0;
     border-radius: 20px;
     padding: 20px;
-    border: 5px solid var(--primary-color);
-
-    visibility: hidden; 
-    transform: translateX(100%);
-    transition: transform 0.5s ease, visibility 0.5s ease;
-    z-index: 1000;
+    border: 5px solid var(--primary-color);	
+    z-index: 1000; 
+    display: none;
 }
 
 .header-nav--open {    
-    transform: translateY(0) scale(1);
-    visibility: visible; 
+    display: block;
 }
 .main-menu {
     display: grid;    
@@ -767,9 +765,8 @@ footer {
         border: none;
         right: 0;
         top: 0;
-    	transition: none;        
-        visibility: visible; 
-        transform: translateX(0);
+    	transition: none;     
+    	display: block;
 	}
     .review-wrap {
         grid-template-columns: repeat(3, auto);        
