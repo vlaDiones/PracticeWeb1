@@ -162,7 +162,7 @@ section {
     border: 5px solid var(--primary-color);
 
     visibility: hidden; 
-    transform: translateX(1000%);
+    transform: translateX(100%);
     transition: transform 0.5s ease, visibility 0.5s ease;
     z-index: 1000;
 }
@@ -823,4 +823,5 @@ a) Mobile devices – 320px—480px
 b) iPads, Tablets – 481px—768px
 c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
+
 e) Extra large screens, TV – 1201px, and more*/
