@@ -112,6 +112,7 @@ section {
 .header-section {
     margin: 0 auto;
     padding: 48px 0 0;
+    overflow-x: hidden; 
 }
 
 .header-wrap {
@@ -825,3 +826,4 @@ c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
 
 e) Extra large screens, TV – 1201px, and more*/
+
