@@ -152,10 +152,7 @@ section {
     font-size: 30px;
 }
 .header-nav {
-    width: auto;
-    height: auto;
     background: var(--primary-bg-color);
-    position: absolute;
     top: 100px;
     right: 0;
     border-radius: 20px;
@@ -826,4 +823,5 @@ c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
 
 e) Extra large screens, TV – 1201px, and more*/
+
 
