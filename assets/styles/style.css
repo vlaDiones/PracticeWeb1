@@ -50,7 +50,6 @@ a:active{
 }
 .scale:hover {
     scale: 1.05;
-    z-index: 1;
 }
 ul {
     list-style-type: none;
@@ -112,16 +111,18 @@ section {
 .header-section {
     margin: 0 auto;
     padding: 48px 0 0;
+    overflow-x: hidden; 
 }
 
 .header-wrap {
-    max-width: 1220px;	
+    max-width: 1220px;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;    
     padding: 0 10px;
     margin: 0 auto;
+    transition: color 0.4s linear, background-color 0.4s linear, box-shadow 0.4s ease;
 }
 .header--scrolled {
     position: fixed;
@@ -131,6 +132,8 @@ section {
     border-radius: 0 0 30px 30px;
     border: 5px solid var(--primary-color);
     background-color: var(--primary-bg-color); 
+    
+    animation: fade 0.5s ease;
     
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);   
     
@@ -152,6 +155,7 @@ section {
 }
 .header-nav {
     background: var(--primary-bg-color);
+    position: absolute;
     top: 100px;
     right: 0;
     border-radius: 20px;
@@ -164,7 +168,7 @@ section {
     z-index: 1000;
 }
 
-.header-nav__open {    
+.header-nav--open {    
     transform: translateY(0) scale(1);
     visibility: visible; 
 }
@@ -626,8 +630,9 @@ footer {
     border-radius: 20px;
     max-width: 500px;
     width: 90%;
-    z-index: 2001;
-
+    z-index: 20000;
+    
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     transform: scale(0.9);
     transition: transform 0.4s ease;
 }
@@ -666,7 +671,7 @@ footer {
 .modal-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px;    
 }
 
 .form-group {
@@ -820,9 +825,4 @@ a) Mobile devices – 320px—480px
 b) iPads, Tablets – 481px—768px
 c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
-
 e) Extra large screens, TV – 1201px, and more*/
-
-
-
-
