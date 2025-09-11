@@ -96,7 +96,7 @@ section {
         linear-gradient(to left, var(--lines-color) 1px, transparent 1px);
     background-position:
         0.82% 0,
-        33.60%  0,
+        33.60% 0,
         66.39% 0,
         99.18% 0;
     background-size:
@@ -109,7 +109,6 @@ section {
 
 /*----------------------Header---------------------*/
 .header-section {
-    margin: 0 auto;
     padding: 48px 0 0;
 }
 
@@ -708,11 +707,11 @@ footer {
     }
 
     .review-wrap, .articles, .news-wrap {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, auto);
     }
     
     .companies {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, auto);
     }
 
    
@@ -720,7 +719,7 @@ footer {
     .review-wrap .review:nth-child(odd):last-child,
     .news-wrap .news-section:nth-child(odd):last-child {
         grid-column: 1 / -1;
-        width: 75%; 
+        justify-content: space-between;
         justify-self: center;
     }
 
@@ -736,7 +735,7 @@ footer {
         width: 100%;
     }
 	footer {
-    	justify-content: space-around;
+    	justify-content: space-evenly;
         grid-template-columns: repeat(2, auto);
     	text-align: left;
         gap: px;
