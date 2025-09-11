@@ -115,7 +115,8 @@ section {
 }
 
 .header-wrap {
-    max-width: 1220px;
+    max-width: 1220px;	
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -124,9 +125,8 @@ section {
 }
 .header--scrolled {
     position: fixed;
-    min-height: 80px;
+    min-height: 70px;
     top: 0;
-    width: 100%;
     padding: 0;
     border-radius: 0 0 30px 30px;
     border: 5px solid var(--primary-color);
@@ -822,6 +822,7 @@ c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
 
 e) Extra large screens, TV – 1201px, and more*/
+
 
 
 
