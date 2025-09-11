@@ -1,3 +1,4 @@
+/*----------------------------Burger-Menu-----------------------------------*/
 const burgerMenu = document.getElementById('burgerMenu');
 const open_icon = document.getElementById('open-icon');
 const close_icon = document.getElementById('close-icon');
@@ -6,9 +7,9 @@ const header_now = document.getElementById('header-nav');
 burgerMenu.addEventListener('click', () => {
     open_icon.classList.toggle('d-none');
     close_icon.classList.toggle('d-none');
-    header_now.classList.toggle('header-nav__open');
+    header_now.classList.toggle('header-nav--open');
 });
-
+/*----------------------------Scroll-Animation-----------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
     const elementsToScale = document.querySelectorAll('.scale-scroll');
 
@@ -31,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+/*----------------------------Modal-Window-----------------------------------*/
 const open_modal_window = document.getElementById('open-modal-window');
 const modal = document.getElementById('contact-modal');
 const close_modal_screen = modal.querySelector('.modal-close');
@@ -62,25 +63,37 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
+/*----------------------------Modal-Window-----------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
     
     const header = document.getElementById('main-header');
     
-    
     if (header) {
-        const sticky_point = header.offsetTop;
+        const colorStart = [255, 255, 255];
+        const colorEnd = [200, 160, 115];
+        
+        const scrollDistance = 8000; 
+        
+        const stickyPoint = header.offsetTop;
+
+        const lerpColor = (colorA, colorB, amount) => {
+            const r = Math.round(colorA[0] + (colorB[0] - colorA[0]) * amount);
+            const g = Math.round(colorA[1] + (colorB[1] - colorA[1]) * amount);
+            const b = Math.round(colorA[2] + (colorB[2] - colorA[2]) * amount);
+            return `rgb(${r}, ${g}, ${b})`;
+        };
 
         const handle_scroll = () => {
-            if (window.scrollY > sticky_point) {
-                
+            const scrollY = window.scrollY;
+            if (scrollY > stickyPoint) {
                 header.classList.add('header--scrolled');
             } else {
                 header.classList.remove('header--scrolled');
             }
-        };
-        
+            const progress = Math.min(scrollY / scrollDistance, 1);
+            const newColor = lerpColor(colorStart, colorEnd, progress);
+            header.style.backgroundColor = newColor;
+        };        
         window.addEventListener('scroll', handle_scroll);
-    }
-    
+    }    
 });
