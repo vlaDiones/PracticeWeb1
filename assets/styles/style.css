@@ -100,20 +100,20 @@ section {
     padding: 10px;
     margin: 0 auto;
     background-image:
-        linear-gradient(to right, var(--lines-color) 1px, transparent 1px),
-        linear-gradient(to right,var(--lines-color) 1px, transparent 1px),
-        linear-gradient(to left, var(--lines-color) 1px, transparent 1px),
-        linear-gradient(to left, var(--lines-color) 1px, transparent 1px);
+        linear-gradient(to right, var(--lines-color) 1px),
+        linear-gradient(to right,var(--lines-color) 1px),
+        linear-gradient(to left, var(--lines-color) 1px),
+        linear-gradient(to left, var(--lines-color) 1px);
     background-position:
         0.82% 0,
         33.60% 0,
         66.39% 0,
         99.18% 0;
     background-size:
-        3% 100%,
-        3% 100%,
-        3% 100%,
-        3% 100%;
+        3px 100%,
+        3px 100%,
+        3px 100%,
+        3px 100%;
     background-repeat: no-repeat;
 }
 
@@ -188,16 +188,16 @@ section {
     height: 21px;
 }
 .hero-section {
-    width: 100%;
+    max-width: 1200px;
     min-height: 758px;
     background: url(../img/interior/covers/hero_cover_main.webp);
-	background-size: auto 105%;
+    background-size: auto 105%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 70px ;
+    border-radius: 100px ;
     display: flex;
     align-items: center;
-    margin: 58px 0 0;
+    margin: 58px auto 0;
 }
 .hero-wrap {
     max-width: 434px;
@@ -593,7 +593,7 @@ footer {
 .copyright-bar {
     text-align: center;
     padding: 35px 20px;
-    border-top: 1px solid var(--lines-color);
+    border-top: 3px solid var(--lines-color);
     margin-top: 40px;
     color: var(--text-color);
 }
@@ -847,4 +847,3 @@ b) iPads, Tablets – 481px—768px
 c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
 e) Extra large screens, TV – 1201px, and more*/
-
