@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (header) {
         const colorStart = [255, 255, 255];
-        const colorEnd = [200, 160, 115];
+        const colorEnd = [205, 162, 116];
         
         const scrollDistance = 8000; 
         
