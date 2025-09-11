@@ -111,7 +111,6 @@ section {
 .header-section {
     margin: 0 auto;
     padding: 48px 0 0;
-    overflow-x: hidden; 
 }
 
 .header-wrap {
@@ -125,19 +124,14 @@ section {
     transition: color 0.4s linear, background-color 0.4s linear, box-shadow 0.4s ease;
 }
 .header--scrolled {
-	width: 100%;
     position: fixed;
+    width: 100%;
     min-height: 70px;
     top: 0;
     padding: 0;
     border-radius: 0 0 30px 30px;
     border: 5px solid var(--primary-color);
-    background-color: var(--primary-bg-color); 
-    
-    animation: fade 0.5s ease;
-    
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);   
-    
+    background-color: var(--primary-bg-color);         
     z-index: 3000;
 }
 
@@ -827,4 +821,3 @@ b) iPads, Tablets – 481px—768px
 c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
 e) Extra large screens, TV – 1201px, and more*/
-
