@@ -55,12 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (open_modal_window && modal) {
         open_modal_window.addEventListener('click', open_modal);
         close_modal_screen.addEventListener('click', close_modal);
-        overlay.addEventListener('click', closeModal);        
-        window.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && modal.classList.contains('is-open')) {
-                close_modal();
-            }
-        });
+        overlay.addEventListener('click', closeModal);     
     }
 });
 /*----------------------------Modal-Window-----------------------------------*/
@@ -97,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener('scroll', handle_scroll);
     }    
 });
+
 
 
 
