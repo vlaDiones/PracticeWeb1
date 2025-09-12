@@ -142,7 +142,7 @@ section, .header-wrap{
     justify-content: space-between;
     align-items: center;  
     margin: 0 auto;
-    transition: color 0.4s linear, background-color 0.4s linear, box-shadow 0.4s ease;
+    transition: all 0.4s linear;
 }
 .header--scrolled {
     position: fixed;
