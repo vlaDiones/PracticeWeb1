@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const scrollDistance = 8000; 
         
-        const stickyPoint = header.offsetTop - 40;
+        const stickyPoint = header.offsetTop;
 
         const lerpColor = (colorA, colorB, amount) => {
             const r = Math.round(colorA[0] + (colorB[0] - colorA[0]) * amount);
@@ -97,3 +97,4 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener('scroll', handle_scroll);
     }    
 });
+
