@@ -119,7 +119,7 @@ section, .header-wrap{
 
 /*----------------------Header---------------------*/
 .header-section {
-    padding:  0;
+    padding: 10px 0;
 }
 .logo {
     width: 177px;
@@ -846,4 +846,5 @@ b) iPads, Tablets – 481px—768px
 c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
 e) Extra large screens, TV – 1201px, and more*/
+
 
