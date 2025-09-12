@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (open_modal_window && modal) {
         open_modal_window.addEventListener('click', open_modal);
         close_modal_screen.addEventListener('click', close_modal);
-        overlay.addEventListener('click', closeModal);     
+        overlay.addEventListener('click', close_modal);     
     }
 });
 /*----------------------------Modal-Window-----------------------------------*/
@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener('scroll', handle_scroll);
     }    
 });
+
 
 
 
