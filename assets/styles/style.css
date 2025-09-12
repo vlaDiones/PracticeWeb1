@@ -119,9 +119,8 @@ section, .header-wrap{
 
 /*----------------------Header---------------------*/
 .header-section {
-    padding: 48px 0 0;
+    padding:  0;
 }
-
 .logo {
     width: 177px;
     font-size: 40px;
@@ -161,8 +160,8 @@ section, .header-wrap{
 }
 .header-nav {
     position: absolute;
-    top: 80px;
-    right: 0;
+    top: 90px;
+    right: 5px;
     border-radius: 20px;
     padding: 20px;
     background: var(--primary-bg-color);
@@ -776,6 +775,9 @@ footer {
 }
   
 @media (min-width: 1025px){
+    .header-section {
+        padding: 48px 0 0;
+    }
     .burgerMenu {
       display: none;
     }
