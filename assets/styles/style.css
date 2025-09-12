@@ -166,7 +166,7 @@ section, .header-wrap{
     padding: 20px;
     background: var(--primary-bg-color);
     border: 5px solid var(--primary-color);	
-    z-index: 2999; 
+    z-index: 3000; 
     display: none;
 }
 
@@ -607,7 +607,7 @@ footer {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0.4s ease;
-    z-index: 2000;
+    z-index: 4000;
 }
 
 .modal.is-open {
@@ -846,3 +846,4 @@ b) iPads, Tablets – 481px—768px
 c) Small screens, laptops – 769px—1024px
 d) Desktops, large screens – 1025px—1200px
 e) Extra large screens, TV – 1201px, and more*/
+
